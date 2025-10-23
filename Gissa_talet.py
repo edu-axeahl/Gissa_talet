@@ -1,7 +1,7 @@
 import random as rand
 thing = rand.randint(1, 10)
 for round_ in range(1, 3 +1):
-    tal = int(input("Gissa ett tal mellan 1 och 10: "))
+    tal = int(input(f"Försök {round_}: Gissa talet: "))
     if tal == thing:
         print("Rätt gissat!")
         break
@@ -11,5 +11,5 @@ for round_ in range(1, 3 +1):
         print("Talet är mindre än", (tal))
     else:
         print("Fel gissat.")
-print("talet var", (thing))
+print("Talet var", (thing), end=" ")
 print("Antal gissningar:", (round_))
